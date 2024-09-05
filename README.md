@@ -34,10 +34,14 @@ Before running the automated tests, make sure the application is running locally
 
 ### 2. Install Playwright:
    ```bash
-   npx tsc
-   npm start
+   npm install playwright
+   npm install @playwright/test --save-dev
    ```
-### 3. Run the Tests:
+### 3. Install TypeScript and Related Packages:
+   ```bash
+   npm install typescript ts-node @types/node --save-dev
+   ```
+### 4. Run the Tests:
    ```bash
    npm test
    ```
@@ -52,10 +56,10 @@ The automated tests cover the following scenarios:
 
 2. **MFA Step:**
 
-   -Correct MFA code
-   Incorrect MFA code
+   - Correct MFA code
+   - Incorrect MFA code
 
-3. **Authenticated Page Access:**
+4. **Authenticated Page Access:**
 
   - Navigation to an authenticated page with a valid session cookie
   - Attempt to access an authenticated page without a valid session cookie
