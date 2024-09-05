@@ -68,5 +68,3 @@ The automated tests cover the following scenarios:
 - [Test Plan and Bug Report](docs/Test%20Plan.pdf): Detailed test cases and identified bugs during manual testing.
 
 If you have any questions or need further clarification, feel free to reach out.
-
-Good luck, and we look forward to reviewing your work!
