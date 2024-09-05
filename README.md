@@ -56,8 +56,8 @@ The automated tests cover the following scenarios:
 
 2. **MFA Step:**
 
-   - Correct MFA code
-   - Incorrect MFA code
+  - Correct MFA code
+  - Incorrect MFA code
 
 4. **Authenticated Page Access:**
 
