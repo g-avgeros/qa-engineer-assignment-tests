@@ -5,7 +5,7 @@ This repository contains the test plan, bug report, and automated tests for the 
 ## Prerequisites
 
 To run the tests, make sure you have the following installed:
-  - Node.js (version 12 or later)
+  - Node.js 
   - npm (Node Package Manager)
 
 ## Setup Instructions
