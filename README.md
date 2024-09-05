@@ -7,7 +7,6 @@ This repository contains the test plan, bug report, and automated tests for the 
 To run the tests, make sure you have the following installed:
   - Node.js (version 12 or later)
   - npm (Node Package Manager)
-  - Playwright
 
 ## Setup Instructions
 
