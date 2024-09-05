@@ -58,7 +58,7 @@ The automated tests cover the following scenarios:
   - Correct MFA code
   - Incorrect MFA code
 
-4. **Authenticated Page Access:**
+3. **Authenticated Page Access:**
 
   - Navigation to an authenticated page with a valid session cookie
   - Attempt to access an authenticated page without a valid session cookie
