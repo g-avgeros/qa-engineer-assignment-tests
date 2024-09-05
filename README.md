@@ -10,16 +10,19 @@ To run the tests, make sure you have the following installed:
 
 ## Setup Instructions
 
-1. **Clone the Repository:**
+1. **Download and Extract the Project:**
+  - Download the ZIP file containing the project.
+  - Extract the ZIP file to a directory on your computer.
+
+2. **Navigate to the Project Directory:** 
    ```bash
-   git clone [repository_url]
    cd qa-assignment
    ```
-2. **Install the dependencies**
+3. **Install the dependencies**
    ```bash
    npm install
    ```
-3. **Run the application**
+4. **Run the application**
    ```bash
    npx tsc
    npm start
