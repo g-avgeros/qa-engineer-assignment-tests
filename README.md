@@ -29,7 +29,7 @@ To run the tests, make sure you have the following installed:
    ```
 The application will run on http://localhost:3000.
 
-## Running the Automated Tests
+## Run the Automated Tests
 
 ### 1. Ensure the Application is Running:
 Before running the automated tests, make sure the application is running locally at http://localhost:3000 as mentioned in the setup instructions above.
@@ -43,6 +43,7 @@ Before running the automated tests, make sure the application is running locally
    ```bash
    npm install playwright
    npm install @playwright/test --save-dev
+   npx playwright install
    ```
 ### 4. Install TypeScript and Related Packages:
    ```bash

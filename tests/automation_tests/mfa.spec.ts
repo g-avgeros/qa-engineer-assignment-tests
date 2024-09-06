@@ -1,5 +1,3 @@
-// mfa.spec.ts
-
 import { test, expect, Page } from '@playwright/test';
 import { MFAPage } from '../pages/MFAPage';
 import { LoginPage } from '../pages/LoginPage';
@@ -37,7 +35,6 @@ test('TC010: Test MFA with empty field', async ({ page }) => {
   await loginBeforeMFA(page);
   const mfaPage = new MFAPage(page);
   await mfaPage.enterMfaCode('');
-  await page.click(mfaPage.submitButton);
   await page.waitForTimeout(1000);
 
   const warningText = await page.evaluate(() => {
@@ -45,7 +42,10 @@ test('TC010: Test MFA with empty field', async ({ page }) => {
     mfaInput.reportValidity();
     return mfaInput.validationMessage;
   });
-  expect(warningText).toBe('Συμπληρώστε αυτό το πεδίο.');
+  
+  if (warningText !== 'Συμπληρώστε αυτό το πεδίο.' && warningText !== 'Please fill out this field.') {
+    throw new Error(`Unexpected validation message: ${warningText}`);
+  }
 
   const isMfaInvalid = await page.evaluate(() => {
     const mfaInput = document.querySelector('input[name="mfaCode"]') as HTMLInputElement;

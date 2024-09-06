@@ -1,5 +1,3 @@
-// login.spec.ts
-
 import { test, expect } from '@playwright/test';
 import { LoginPage } from '../pages/LoginPage';
 
@@ -38,9 +36,7 @@ test('TC004: Test login with both username and password incorrect', async ({ pag
 test('TC005: Test login with empty username and/or password', async ({ page }) => {
   const loginPage = new LoginPage(page);
   await loginPage.navigate();
-  await page.fill(loginPage.usernameInput, '');
-  await page.fill(loginPage.passwordInput, '');
-  await page.click(loginPage.submitButton);
+  await loginPage.login('', '');
   await page.waitForTimeout(2000);
 
   const usernameWarningText = await page.evaluate(() => {
@@ -48,7 +44,10 @@ test('TC005: Test login with empty username and/or password', async ({ page }) =
     usernameInput.reportValidity();
     return usernameInput.validationMessage;
   });
-  expect(usernameWarningText).toBe('Συμπληρώστε αυτό το πεδίο.');
+
+  if (usernameWarningText !== 'Συμπληρώστε αυτό το πεδίο.' && usernameWarningText !== 'Please fill out this field.') {
+    throw new Error(`Unexpected validation message: ${usernameWarningText}`);
+  }
 
   const isUsernameInvalid = await page.evaluate(() => {
     const usernameInput = document.querySelector('input[name="username"]') as HTMLInputElement;
