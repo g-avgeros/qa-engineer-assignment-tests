@@ -16,7 +16,7 @@ To run the tests, make sure you have the following installed:
 
 2. **Navigate to the Project Directory:** 
    ```bash
-   cd cd qa-engineer-assignment-master
+   cd qa-engineer-assignment-master
    ```
 3. **Install the dependencies**
    ```bash
