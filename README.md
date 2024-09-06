@@ -16,7 +16,7 @@ To run the tests, make sure you have the following installed:
 
 2. **Navigate to the Project Directory:** 
    ```bash
-   cd qa-assignment
+   cd cd qa-engineer-assignment-master
    ```
 3. **Install the dependencies**
    ```bash
@@ -34,16 +34,21 @@ The application will run on http://localhost:3000.
 ### 1. Ensure the Application is Running:
 Before running the automated tests, make sure the application is running locally at http://localhost:3000 as mentioned in the setup instructions above.
 
-### 2. Install Playwright:
+### 2. Navigate to the tests folder:
+   ```bash
+   cd tests
+   ```
+
+### 3. Install Playwright:
    ```bash
    npm install playwright
    npm install @playwright/test --save-dev
    ```
-### 3. Install TypeScript and Related Packages:
+### 4. Install TypeScript and Related Packages:
    ```bash
    npm install typescript ts-node @types/node --save-dev
    ```
-### 4. Run the Tests:
+### 5. Run the Tests:
    ```bash
    npm test
    ```
