@@ -24,7 +24,6 @@ To run the tests, make sure you have the following installed:
    ```
 4. **Run the application**
    ```bash
-   npx tsc
    npm start
    ```
 The application will run on http://localhost:3000.
