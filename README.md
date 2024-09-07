@@ -32,13 +32,14 @@ The application will run on http://localhost:3000.
 ## Run the Automated Tests
 
 ### 1. Ensure the Application is Running:
-Before running the automated tests, make sure the application is running locally at http://localhost:3000 as mentioned in the setup instructions above.
+ Open a new terminal and start the application locally. Make sure it is running at http://localhost:3000 as described in the setup instructions.
 
 ### 2. Navigate to the tests folder:
    ```bash
+   cd qa-engineer-assignment-master
    cd tests
    ```
-
+   
 ### 3. Install Playwright:
    ```bash
    npm install playwright
