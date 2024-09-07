@@ -11,8 +11,14 @@ To run the tests, make sure you have the following installed:
 ## Setup Instructions
 
 1. **Download and Extract the Project:**
-  - Download the ZIP file containing the project.
-  - Extract the ZIP file to a directory on your computer.
+  - **Option 1** 
+      Download the ZIP file containing the project
+      Extract the ZIP file to a directory on your computer.
+  
+  - **Option 2** 
+   ```bash
+   git clone https://github.com/g-avgeros/
+   ```
 
 2. **Navigate to the Project Directory:** 
    ```bash
