@@ -22,7 +22,7 @@ To run the tests, make sure you have the following installed:
 
 2. **Navigate to the Project Directory:** 
    ```bash
-   cd qa-engineer-assignment-master
+   cd qa-engineer-assignment-tests
    ```
 3. **Install the dependencies**
    ```bash
@@ -41,7 +41,7 @@ The application will run on http://localhost:3000.
 
 ### 2. Navigate to the tests folder:
    ```bash
-   cd qa-engineer-assignment-master
+   cd qa-engineer-assignment-tests
    cd tests
    ```
    
