@@ -1,6 +1,6 @@
 ## Introduction
 
-This repository contains the test plan, bug report, and automated tests for the VODA.ai QA Engineer assignment. The automated tests are implemented using Playwright with JavaScript to cover the login flow, Multi-Factor Authentication (MFA) step, and access to authenticated pages.
+This repository contains the test plan, bug report, and automated tests. The automated tests are implemented using Playwright with JavaScript to cover the login flow, Multi-Factor Authentication (MFA) step, and access to authenticated pages.
 
 ## Prerequisites
 
@@ -10,12 +10,7 @@ To run the tests, make sure you have the following installed:
 
 ## Setup Instructions
 
-1. **Download and Extract the Project:**
-  - **Option 1** 
-    - Download the ZIP file containing the project
-    - Extract the ZIP file to a directory on your computer.
-  
-  - **Option 2** 
+1. **Download the Project:**
    ```bash
    git clone https://github.com/g-avgeros/qa-engineer-assignment-tests.git
    ```
